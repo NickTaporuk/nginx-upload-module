@@ -9,6 +9,10 @@
 
 #include <ngx_http_upload.h>
 
+#define NGX_HAVE_OPENSSL_MD5_H 1
+#define NGX_OPENSSL_MD5 1
+#define NGX_HAVE_OPENSSL_SHA1_H 1
+
 static ngx_int_t ngx_http_upload_handler(ngx_http_request_t *r);
 static ngx_int_t ngx_http_upload_body_handler(ngx_http_request_t *r);
 
